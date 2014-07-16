@@ -1,0 +1,43 @@
+{
+    "name": "slush-kathinka",
+    "description": "A slush generator for KaThinka API framework",
+    "version": "0.1.0",
+    "homepage": "https://github.com/Wercajk/slush-kathinka",
+    "author": {
+        "name": "Mario Vejlupek",
+        "email": "mario@vejlupek.cz"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Wercajk/slush-kathinka.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Wercajk/slush-kathinka/issues"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://github.com/Wercajk/slush-kathinka/blob/master/LICENSE"
+    }],
+    "main": "slushfile.js",
+    "engines": {
+        "node": ">= 0.10.26",
+        "npm": ">=1.4.3"
+    },
+    "scripts": {
+        "test": "echo \"No tests\""
+    },
+    "dependencies": {
+        "slush": ">=1.0.0",
+        "gulp": "^3.6.2",
+        "gulp-template": "^0.1.1",
+        "gulp-install": "^0.1.4",
+        "gulp-conflict": "^0.1.1",
+        "gulp-rename": "^1.2.0",
+        "underscore.string": "^2.3.3",
+        "inquirer": "^0.4.1",
+        "iniparser": "^1.0.5"
+    },
+    "keywords": [
+        "slushgenerator"
+    ]
+}
