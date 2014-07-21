@@ -1,0 +1,27 @@
+{
+  "name": "<%= nameDashed %>",
+  "version": "0.0.1",
+  "description": "Backend REST API for password/key handling",
+  "main": "index.js",
+  "scripts": {
+    "test": "bin/test.sh",
+    "start": "nvm use && node --harmony index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wercajk/KeyProjectBackend.git"
+  },
+  "author": "Wercajk",
+  "license": "Copyright",
+  "bugs": {
+    "url": "https://github.com/Wercajk/KeyProjectBackend/issues"
+  },
+  "homepage": "https://github.com/Wercajk/KeyProjectBackend",
+  "dependencies": {
+    "gulp": "^3.8.6",
+    "kathinka": "0.1.4"
+  },
+  "engines": {
+    "node": ">= 0.11.9"
+  }
+}

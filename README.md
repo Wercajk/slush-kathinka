@@ -16,13 +16,13 @@ $ npm install -g slush-kathinka
 Create a new folder for your project:
 
 ```bash
-$ mkdir my-slush-kathinka
+$ mkdir my-kathinka-project
 ```
 
 Run the generator from within the new folder:
 
 ```bash
-$ cd my-slush-kathinka && slush slush-kathinka
+$ cd my-kathinka-project && slush slush-kathinka
 ```
 
 ## Getting To Know Slush
@@ -40,7 +40,7 @@ See the [CONTRIBUTING Guidelines](https://github.com/Wercajk/slush-kathinka/blob
 ## Support
 If you have any problem or suggestion please open an issue [here](https://github.com/Wercajk/slush-kathinka/issues).
 
-## License 
+## License
 
 The MIT License
 
@@ -66,4 +66,3 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
-

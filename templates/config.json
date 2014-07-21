@@ -1,0 +1,11 @@
+{
+  "version": "1",
+  "server": {
+    "port": 3777
+  },
+  "db": {
+    "mongo": {
+      "url": "mongodb://localhost/<%= nameDashed %>"
+    }
+  }
+}

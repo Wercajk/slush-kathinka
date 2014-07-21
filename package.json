@@ -24,7 +24,7 @@
         "npm": ">=1.4.3"
     },
     "scripts": {
-        "test": "echo \"No tests\""
+        "test": "NODE_ENV=test node_modules/.bin/mocha -R spec test/*_test.js"
     },
     "dependencies": {
         "slush": ">=1.0.0",
@@ -36,6 +36,11 @@
         "underscore.string": "^2.3.3",
         "inquirer": "^0.4.1",
         "iniparser": "^1.0.5"
+    },
+    "devDependencies": {
+      "chai": "*",
+      "mocha": "*",
+      "mock-gulp-dest": "~0.1.0"
     },
     "keywords": [
         "slushgenerator"
