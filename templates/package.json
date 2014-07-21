@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Wercajk/KeyProjectBackend",
   "dependencies": {
     "gulp": "^3.8.6",
-    "kathinka": "0.1.4"
+    "kathinka": "0.1.5"
   },
   "engines": {
     "node": ">= 0.11.9"

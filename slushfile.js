@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 gulp.task('default', function (done) {
   inquirer.prompt([
-    {type: 'input', name: 'name', message: 'What do you want to name your AngularJS app?', default: getNameProposal()},
+    {type: 'input', name: 'name', message: 'What do you want to name your KaThinka app?', default: getNameProposal()},
   ],
   function (answers) {
     answers.nameDashed = _.slugify(answers.name);

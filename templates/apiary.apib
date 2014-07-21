@@ -1,0 +1,30 @@
+FORMAT: 1A
+# Key Store API
+HOST: http://0.0.0.0:54321
+
+# Key Store API Root [/]
+Key Store API entry point
+
+This resource does not have any attributes. Instead it offers welcome message.
+
+## Retrieve Entry Point [GET]
+
++ Response 200 (application/json; charset=utf-8)
+
+    + Schema
+
+            {
+                "$schema": "http://json-schema.org/draft-03/schema#",
+                "type": "object",
+                "required": true,
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "version": {
+                        "type": "string",
+                        "required": true
+                    }
+                }
+            }

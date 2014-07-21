@@ -1,7 +1,7 @@
 {
   "version": "1",
   "server": {
-    "port": 3777
+    "port": 54321
   },
   "db": {
     "mongo": {

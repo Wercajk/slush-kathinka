@@ -10,7 +10,7 @@ chai.should();
 
 require('../slushfile');
 
-describe('slush-angular', function() {
+describe('slush-kathinka', function() {
   before(function () {
     process.chdir(__dirname);
   });
