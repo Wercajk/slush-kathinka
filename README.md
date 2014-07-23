@@ -25,6 +25,13 @@ Run the generator from within the new folder:
 $ cd my-kathinka-project && slush kathinka
 ```
 
+Generate first resource:
+
+```bash
+$ slush kathinka:resource
+```
+
+
 ## Getting To Know Slush
 
 Slush is a tool that uses Gulp for project scaffolding.

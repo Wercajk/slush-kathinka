@@ -13,7 +13,7 @@ gulp.task('default', function (done) {
   function (answers) {
     answers.nameDashed = _.slugify(answers.name);
     answers.modulename = _.camelize(answers.nameDashed);
-    var files = [__dirname + '/templates/**'];
+    var files = [__dirname + '/templates/root/**'];
     return gulp.src(files)
       .pipe(template(answers))
       .pipe(rename(function (file) {
@@ -27,6 +27,28 @@ gulp.task('default', function (done) {
       .on('finish', function () {
         done();
       });
+  });
+});
+
+gulp.task('resource', function (done) {
+
+  inquirer.prompt([
+    {type: 'input', name: 'name', message: 'Give your resource a name', default: 'example'}
+  ],
+  function (answers) {
+    answers.nameDashed = _.slugify(answers.name);
+
+    var file = [__dirname + '/templates/resources/**'];
+    return gulp.src(file)
+      .pipe(rename(function (file) {
+        file.basename = answers.nameDashed;
+      }))
+      .pipe(conflict('./'))
+      .pipe(gulp.dest('./'))
+      .on('finish', function () {
+        done();
+      });
+
   });
 });
 

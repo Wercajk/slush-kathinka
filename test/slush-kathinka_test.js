@@ -11,6 +11,7 @@ chai.should();
 require('../slushfile');
 
 describe('slush-kathinka', function() {
+
   before(function () {
     process.chdir(__dirname);
   });
@@ -89,7 +90,27 @@ describe('slush-kathinka', function() {
       });
     });
 
+
+
   });
+
+  describe('resource generator', function () {
+
+    beforeEach(function () {
+      mockPrompt({name: 'users'});
+    });
+
+    it('should put resource file in current working directory', function (done) {
+
+        gulp.start('resource').once('stop', function () {
+          mockGulpDest.assertDestContains('app/resources/users.js');
+          done();
+        });
+
+    });
+
+  });
+
 });
 
 /**
