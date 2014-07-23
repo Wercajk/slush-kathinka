@@ -1,6 +1,6 @@
 {
     "name": "slush-kathinka",
-    "description": "A slush generator for KaThinka API framework",
+    "description": "A slush generator for Koa based KaThinka API framework",
     "version": "0.1.1",
     "homepage": "https://github.com/Wercajk/slush-kathinka",
     "author": {
@@ -43,6 +43,10 @@
       "mock-gulp-dest": "~0.1.0"
     },
     "keywords": [
-        "slushgenerator"
+        "slushgenerator",
+        "kathinka",
+        "koa",
+        "rest",
+        "api"
     ]
 }

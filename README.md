@@ -22,7 +22,7 @@ $ mkdir my-kathinka-project
 Run the generator from within the new folder:
 
 ```bash
-$ cd my-kathinka-project && slush slush-kathinka
+$ cd my-kathinka-project && slush kathinka
 ```
 
 ## Getting To Know Slush
