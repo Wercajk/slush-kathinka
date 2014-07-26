@@ -1,22 +1,22 @@
 {
   "name": "<%= nameDashed %>",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Backend REST API for password/key handling",
   "main": "index.js",
   "scripts": {
     "test": "bin/test.sh",
-    "start": "nvm use && node --harmony index.js"
+    "start": "source ~/.nvm/nvm.sh && nvm use && node --harmony index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wercajk/KeyProjectBackend.git"
+    "url": "https://github.com/<% githubName %>/<%= nameDashed %>.git"
   },
-  "author": "Wercajk",
+  "author": "<% githubName %>",
   "license": "Copyright",
   "bugs": {
-    "url": "https://github.com/Wercajk/KeyProjectBackend/issues"
+    "url": "https://github.com/<% githubName %>/<%= nameDashed %>/issues"
   },
-  "homepage": "https://github.com/Wercajk/KeyProjectBackend",
+  "homepage": "https://github.com/<% githubName %>/<%= nameDashed %>",
   "dependencies": {
     "gulp": "^3.8.6",
     "kathinka": "0.1.6"

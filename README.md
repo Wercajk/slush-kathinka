@@ -3,32 +3,53 @@
 > A slush generator for [KaThinka](https://github.com/Wercajk/KaThinka) API framework
 
 
-## Getting Started
-
-Install `slush-kathinka` globally:
+#### Install Slush to bootstrap app
 
 ```bash
-$ npm install -g slush-kathinka
+$ npm -g install slush slush-kathinka
 ```
 
-### Usage
-
-Create a new folder for your project:
+#### Install nvm to install 0.11 nodejs version
 
 ```bash
-$ mkdir my-kathinka-project
+$ curl https://raw.githubusercontent.com/creationix/nvm/v0.12.1/install.sh | bash
 ```
 
-Run the generator from within the new folder:
+#### Install MongoDB as database backend on OS X using [Homebrew](http://brew.sh/)
+
 
 ```bash
-$ cd my-kathinka-project && slush kathinka
+brew install mongodb
+ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
 ```
 
-Generate first resource:
+
+#### Bootstrap application
+
+```bash
+$ mkdir newAwesomeApp
+$ cd newAwesomeApp
+$ slush kathinka
+```
+
+#### Generate first resource
 
 ```bash
 $ slush kathinka:resource
+```
+
+#### Start server
+
+```bash
+$ npm start
+```
+
+#### Check if app is up and running
+
+```bash
+$ curl http://localhost:54321/
+{"status":"ok","version":"1"}
 ```
 
 

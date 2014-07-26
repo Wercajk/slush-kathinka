@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 gulp.task('default', function (done) {
   inquirer.prompt([
     {type: 'input', name: 'name', message: 'What do you want to name your KaThinka app?', default: getNameProposal()},
+    {type: 'input', name: 'githubName', message: 'What is your/organization Github name?'},
   ],
   function (answers) {
     answers.nameDashed = _.slugify(answers.name);
@@ -33,7 +34,7 @@ gulp.task('default', function (done) {
 gulp.task('resource', function (done) {
 
   inquirer.prompt([
-    {type: 'input', name: 'name', message: 'Give your resource a name', default: 'example'}
+    {type: 'input', name: 'name', message: 'Give your resource a name', default: 'users'}
   ],
   function (answers) {
     answers.nameDashed = _.slugify(answers.name);
