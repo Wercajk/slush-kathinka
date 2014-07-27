@@ -1,7 +1,7 @@
 {
   "name": "slush-kathinka",
   "description": "A slush generator for Koa based KaThinka API framework",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "git-tag-version": true,
   "homepage": "https://github.com/Wercajk/slush-kathinka",
   "author": {
