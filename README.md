@@ -1,4 +1,4 @@
-# slush-kathinka [![Build Status](https://secure.travis-ci.org/Wercajk/slush-kathinka.png?branch=master)](https://travis-ci.org/Wercajk/slush-kathinka) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-kathinka.png)](http://badges.enytc.com/for/npm/slush-kathinka)
+# slush-kathinka [![Build Status](https://secure.travis-ci.org/Wercajk/slush-kathinka.png?branch=master)](https://travis-ci.org/Wercajk/slush-kathinka) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-kathinka.png?x=5dfg6s7yvdf78s)](http://badges.enytc.com/for/npm/slush-kathinka)
 
 > A slush generator for [KaThinka](https://github.com/Wercajk/KaThinka) API framework
 
