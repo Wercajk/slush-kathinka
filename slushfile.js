@@ -39,8 +39,9 @@ gulp.task('resource', function (done) {
   function (answers) {
     answers.nameDashed = _.slugify(answers.name);
 
-    var file = [__dirname + '/templates/resources/**'];
+    var file = [__dirname + '/templates/resources/**/*.js'];
     return gulp.src(file)
+      .pipe(template(answers))
       .pipe(rename(function (file) {
         file.basename = answers.nameDashed;
       }))
